@@ -1,13 +1,8 @@
 <!--
- * @Description: 南宫伯赏
- * @Author: 0.1
- * @Date: 2019-08-19 10:24:39
- * @LastEditTime: 2019-08-23 15:19:06
- * @LastEditors: Please set LastEditors
+ 
  -->
- > 每日优鲜项目现在已经不能在网页端和模拟器端访问了，所以该项目的素材获取难度增加，项目一度停滞，尽量更新，
 ## 项目名称
-  > 每日优鲜H5版本 [https://as-vip.missfresh.cn/ug/index.html?referrer=ug&fromSource=zhuye]
+  demo
 ## 项目使用的技术栈
   > React + TS + React-Router + redux + react-redux + fetch&axios实现移动端页面
   > 项目使用TS实现,需要TS基础
