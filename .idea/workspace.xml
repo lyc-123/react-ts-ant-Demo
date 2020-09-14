@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8bb673c-fbea-4bb7-8ee0-2c3a4eedc848" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/searchResult/SearchResult.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/searchResult/SearchResult.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>BrowserHistory</find>
+      <find>createBrowserHistory</find>
+      <find>Action</find>
+      <find>createHashHistory</find>
+      <find>History</find>
+      <find>push</find>
+      <find>LocationDescriptor</find>
+      <find>withRouter</find>
+      <find>iconfont.js</find>
+      <find>header-three</find>
+      <find>icon-shares</find>
+      <find>deleteValue</find>
+      <find>setValue</find>
+      <find>searchValue</find>
+      <find>goBack</find>
+      <find>object-literal-sort-keys</find>
+      <find>console.log</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aT7GfhKXenOMjAtD2uqqXnqyEJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-for-typescript-test" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="D:\work\React\meiriyouxian_react_ts\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\work\React\react-for-typescript\src\pages\navBar\ordinNavBar" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\work\React\react-for-typescript\src\static" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8bb673c-fbea-4bb7-8ee0-2c3a4eedc848" name="Default Changelist" comment="" />
+      <created>1568568134281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568568134281</updated>
+      <workItem from="1568568135667" duration="12453000" />
+      <workItem from="1568785795731" duration="30472000" />
+      <workItem from="1586747650514" duration="1900000" />
+      <workItem from="1586915473897" duration="2616000" />
+      <workItem from="1592892667772" duration="2178000" />
+    </task>
+    <task id="LOCAL-00001" summary="解决使用this.props.history.push中提示不存在push问题，使用withRouter完美解决">
+      <created>1568789038350</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568789038350</updated>
+    </task>
+    <task id="LOCAL-00002" summary="上个路由问题使用interface定义history就可以解决，">
+      <created>1568943117177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568943117178</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="解决使用this.props.history.push中提示不存在push问题，使用withRouter完美解决" />
+    <MESSAGE value="上个路由问题使用interface定义history就可以解决，" />
+    <option name="LAST_COMMIT_MESSAGE" value="上个路由问题使用interface定义history就可以解决，" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="270" y="77" key="SettingsEditor" timestamp="1586747933037">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="270" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586747933037" />
+  </component>
+</project>
