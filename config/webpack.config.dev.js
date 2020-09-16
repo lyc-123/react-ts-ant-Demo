@@ -213,6 +213,10 @@ module.exports = {
                                         px2rem({ remUnit:75 })
                                     ],
                                 },
+                                
+                            },
+                            {
+                                loader: require.resolve('sass-loader')
                             },
                         ],
                     },

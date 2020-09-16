@@ -14,7 +14,7 @@ const paths = require('./paths');
 const getClientEnvironment = require('./env');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
+const px2rem = require('postcss-px2rem')
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
 const publicPath = paths.servedPath;
@@ -218,8 +218,12 @@ module.exports = {
                             ],
                             flexbox: 'no-2009',
                           }),
+                          px2rem({ remUnit:75 })
                         ],
                       },
+                    },
+                    {
+                      loader: require.resolve('sass-loader')
                     },
                   ],
                 },

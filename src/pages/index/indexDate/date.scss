@@ -1,0 +1,60 @@
+.index-data-wrap{
+    width: 2.19rem;
+    height: 3.28rem;
+    background: red;
+    border-radius: 0.27rem;
+    box-shadow: 0rem 0.04rem 0.13rem 0.09rem rgba(212,210,210,0.5);
+}
+.index-data-wrap1{
+    width: 2.19rem;
+    height: 3.28rem;
+    background: red;
+    border-radius: 0.27rem;
+    box-shadow: 0rem 0.04rem 0.13rem 0.09rem rgba(212,210,210,0.5);
+    // transform:  rotateY(90deg);
+}
+/*卡牌翻开动画*/
+.index-open-card {
+    -o-animation: openCard 0.4s 0s linear forwards;
+    -ms-animation: openCard 0.4s 0s linear forwards;
+    -moz-animation: openCard 0.4s 0s linear forwards;
+    -webkit-animation: openCard 0.4s 0s linear forwards;
+    animation: openCard 1s 0s linear forwards
+}
+@keyframes openCard {
+    10%,
+    20%,
+    40%,
+    60% {
+    }
+    100% {
+        -o-transform:  translateX(90deg);
+        -ms-transform:  translateX(90deg);
+        -moz-transform:  translateX(90deg);
+        -webkit-transform:  translateX(90deg);
+        transform:  rotateY(90deg);
+    }
+}
+
+/*卡牌翻开动画*/
+.index-open-card1 {
+    -o-animation: openCard1 0.4s 0s linear forwards;
+    -ms-animation: openCard1 0.4s 0s linear forwards;
+    -moz-animation: openCard1 0.4s 0s linear forwards;
+    -webkit-animation: openCard1 0.4s 0s linear forwards;
+    animation: openCard1 1s 0s linear forwards
+}
+@keyframes openCard1 {
+    10%,
+    20%,
+    40%,
+    60% {
+    }
+    100% {
+        -o-transform:  translateX(90deg);
+        -ms-transform:  translateX(90deg);
+        -moz-transform:  translateX(90deg);
+        -webkit-transform:  translateX(90deg);
+        transform:  rotateY(0deg);
+    }
+}
