@@ -1,0 +1,41 @@
+.index-swiper-wrap{
+    width: 6.96rem;
+    height: 3.47rem;
+    background: #d4d2d2;
+    border-radius: 0.27rem;
+    box-shadow: 0rem 0.04rem 0.32rem 0.09rem #b0b0b0.00004f;
+    position: relative;
+}
+.index-swiper-pagination{
+    width:0.11rem;
+    height: 3.47rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    right:0.1rem;
+    top:0;
+    z-index: 2;
+}
+.index-swiper-wrap img{
+    width: 6.96rem;
+    height: 3.47rem;
+    border-radius: 0.27rem;
+}
+.index-swiper-pagination-icon{
+    width:0.11rem;
+    height:0.11rem;
+    border-radius:50%;
+    background: #fff;
+    opacity: 0.6;
+}
+.index-swiper-page{
+    position: absolute;
+    right:0.5rem;
+    bottom:0.1rem;
+    z-index: 2;
+}
+.pagination-active{
+    opacity: 1;
+    background: red;
+}

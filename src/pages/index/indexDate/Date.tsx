@@ -7,15 +7,14 @@ class Date1 extends React.Component<any, any>{
         this.state = {
             info:{
             },
-            active:true
+            active:false
         }
         
     }
     public componentWillMount() {
         getCalendar().then((res:any)=>{
             this.setState({
-                info:res.data,
-                active:false,
+                info:res.data
             })
         })
     }
@@ -23,28 +22,26 @@ class Date1 extends React.Component<any, any>{
         let active = this.state.active;
         active = !active;
         this.setState({ active });
+        console.log(this.state.active)
     }
     public render(){
         return(
-            <div>
-                {
-                    this.state.active?
-                <div className={`index-data-wrap  ${this.state.active?'index-open-card':''}`} onClick={()=>this.addClass()}>
-                    <p>{this.state.info.solarTerm}</p>
-                    <p>{this.state.info.nlDateDesc}</p>
-                    <p>{this.state.info.tag1}</p>
-                    <p>{this.state.info.tag2}</p>
+            <div className="index-container">
+                <div className={`index-wrap ${this.state.active?'index-open-card':'index-open-card1'}`}>
+                    <div className='index-data-wrap-front' onClick={()=>this.addClass()}>
+                        <p>{this.state.info.solarTerm}</p>
+                        <p>{this.state.info.nlDateDesc}</p>
+                        <p>{this.state.info.tag1}</p>
+                        <p>{this.state.info.tag2}</p>
+                    </div>
+                    <div className='index-data-wrap-back' onClick={()=>this.addClass()}>
+                        <p>{this.state['info']["holiday"]}</p>
+                        <p>{this.state['info']["dateDesc"]}</p>
+                        <p>{this.state['info']["tag1Desc"]}</p>
+                        <p>{this.state['info']["tag2Desc"]}</p>
+                    </div>
                 </div>
-                :
-                <div className={`index-data-wrap1  ${this.state['active']?'':'index-open-card1'}`} onClick={()=>this.addClass()}>
-                    <p>{this.state['info']["holiday"]}</p>
-                    <p>{this.state['info']["dateDesc"]}</p>
-                    <p>{this.state['info']["tag1Desc"]}</p>
-                    <p>{this.state['info']["tag2Desc"]}</p>
-                </div>
-                }
             </div>
-            
         );
     }
 }

@@ -115,7 +115,7 @@ module.exports = {
             // please link the files into your node_modules/ and let module-resolution kick in.
             // Make sure your source files are compiled, as they will not be processed in any way.
             new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
-            new TsconfigPathsPlugin({ configFile: paths.appTsConfig }),
+            new TsconfigPathsPlugin({ configFile: paths.appTsConfig })
         ],
     },
     module: {
@@ -152,9 +152,13 @@ module.exports = {
                         include: paths.appSrc,
                         loader: require.resolve('babel-loader'),
                         options: {
-
                             compact: true,
+                            plugins: [
+                                ['import',{ libraryName:'antd',style:true },'antd'],
+                                ['import',{ libraryName:'antd-mobile',style:true },'antd-mobile']
+                            ]
                         },
+                        
                     },
 
                     // Compile .tsx?
@@ -210,7 +214,7 @@ module.exports = {
                                             ],
                                             flexbox: 'no-2009',
                                         }),
-                                        px2rem({ remUnit:75 })
+                                        px2rem({ remUnit:75 ,exclude: /node_modules/i})
                                     ],
                                 },
                                 
@@ -281,7 +285,7 @@ module.exports = {
             watch: paths.appSrc,
             tsconfig: paths.appTsConfig,
             tslint: paths.appTsLint,
-        }),
+        })
     ],
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.

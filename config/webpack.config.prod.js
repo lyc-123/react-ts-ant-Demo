@@ -149,9 +149,12 @@ module.exports = {
             test: /\.(js|jsx|mjs)$/,
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
-            options: {
-              
+            options: {   
               compact: true,
+              plugins: [
+                ['import',{ libraryName:'antd',style:true },'antd'],
+                ['import',{ libraryName:'antd-mobile',style:true },'antd-mobile']
+              ]
             },
           },
           // Compile .tsx?
@@ -218,7 +221,7 @@ module.exports = {
                             ],
                             flexbox: 'no-2009',
                           }),
-                          px2rem({ remUnit:75 })
+                          px2rem({ remUnit:75 ,exclude: /node_modules/i})
                         ],
                       },
                     },

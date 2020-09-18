@@ -1,25 +1,36 @@
-.index-data-wrap{
+.index-container{
     width: 2.19rem;
     height: 3.28rem;
-    background: red;
-    border-radius: 0.27rem;
-    box-shadow: 0rem 0.04rem 0.13rem 0.09rem rgba(212,210,210,0.5);
+    perspective:1000;
+    transform-style:preserve-3d;
 }
-.index-data-wrap1{
+// .index-container:hover .index-wrap{
+//     transform:rotateY(180deg)
+// }
+.index-wrap{
     width: 2.19rem;
     height: 3.28rem;
-    background: red;
-    border-radius: 0.27rem;
-    box-shadow: 0rem 0.04rem 0.13rem 0.09rem rgba(212,210,210,0.5);
-    // transform:  rotateY(90deg);
+    position:relative;
+    transition:0.6s;
+    transform-style:preserve-3d;
 }
-/*卡牌翻开动画*/
+.index-data-wrap-front,.index-data-wrap-back{
+    width: 2.19rem;
+    height: 3.28rem;
+    border-radius: 0.27rem;
+    position:absolute;
+    left:0;
+    top:0;
+    box-shadow: 0rem 0.04rem 0.13rem 0.09rem rgba(212,210,210,0.5);
+    backface-visibility:hidden;
+}
+/*旋转动画*/
 .index-open-card {
     -o-animation: openCard 0.4s 0s linear forwards;
     -ms-animation: openCard 0.4s 0s linear forwards;
     -moz-animation: openCard 0.4s 0s linear forwards;
     -webkit-animation: openCard 0.4s 0s linear forwards;
-    animation: openCard 1s 0s linear forwards
+    animation: openCard 0.2s 0s linear forwards
 }
 @keyframes openCard {
     10%,
@@ -28,21 +39,28 @@
     60% {
     }
     100% {
-        -o-transform:  translateX(90deg);
-        -ms-transform:  translateX(90deg);
-        -moz-transform:  translateX(90deg);
-        -webkit-transform:  translateX(90deg);
-        transform:  rotateY(90deg);
+        -o-transform:  translateX(180deg);
+        -ms-transform:  translateX(180deg);
+        -moz-transform:  translateX(180deg);
+        -webkit-transform:  translateX(180deg);
+        transform:rotateY(180deg)
     }
 }
-
-/*卡牌翻开动画*/
+.index-open-card .index-data-wrap-back{
+    z-index: 2;
+    transform:rotateY(-180deg)
+}
+/*旋转动画*/
 .index-open-card1 {
-    -o-animation: openCard1 0.4s 0s linear forwards;
-    -ms-animation: openCard1 0.4s 0s linear forwards;
-    -moz-animation: openCard1 0.4s 0s linear forwards;
-    -webkit-animation: openCard1 0.4s 0s linear forwards;
-    animation: openCard1 1s 0s linear forwards
+    -o-animation: openCard 0.4s 0s linear forwards;
+    -ms-animation: openCard 0.4s 0s linear forwards;
+    -moz-animation: openCard 0.4s 0s linear forwards;
+    -webkit-animation: openCard 0.4s 0s linear forwards;
+    animation: openCard1 0.2s 0s linear forwards
+}
+.index-open-card1 .index-data-wrap-front{
+    transform:rotateY(-180deg);
+    z-index:2
 }
 @keyframes openCard1 {
     10%,
@@ -51,10 +69,10 @@
     60% {
     }
     100% {
-        -o-transform:  translateX(90deg);
-        -ms-transform:  translateX(90deg);
-        -moz-transform:  translateX(90deg);
-        -webkit-transform:  translateX(90deg);
-        transform:  rotateY(0deg);
+         -o-transform:  translateX(180deg);
+        -ms-transform:  translateX(180deg);
+        -moz-transform:  translateX(180deg);
+        -webkit-transform:  translateX(180deg);
+        transform:rotateY(180deg)
     }
 }
